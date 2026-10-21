@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="Deionized Foam Hand Wash &amp; Clay Bar Decontamination visual">
+  <defs>
+    <linearGradient id="svcBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1424" />
+      <stop offset="100%" stop-color="#050912" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="url(#svcBg3)" />
+  <circle cx="410" cy="280" r="140" fill="#06b6d4" fill-opacity="0.16" />
+  <circle cx="400" cy="380" r="110" fill="#f59e0b" fill-opacity="0.12" />
+  <rect x="48" y="48" width="704" height="424" rx="20" fill="none" stroke="#06b6d4" stroke-opacity="0.3" stroke-width="2" />
+  <text x="88" y="130" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#06b6d4" letter-spacing="3">SERVICE PILLAR 03</text>
+  <text x="88" y="205" font-family="system-ui, sans-serif" font-size="34" font-weight="800" fill="#f8fafc">Deionized Foam Hand Wash &amp; Clay </text>
+  <text x="88" y="260" font-family="system-ui, sans-serif" font-size="19" fill="#94a3b8">Pristine Clean Mobile Detailing · Bradenton, FL</text>
+  <rect x="88" y="310" width="240" height="10" rx="5" fill="#06b6d4" />
+  <rect x="88" y="340" width="160" height="10" rx="5" fill="#f59e0b" fill-opacity="0.7" />
+</svg>

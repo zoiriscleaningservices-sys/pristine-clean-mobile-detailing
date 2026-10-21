@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640" role="img" aria-label="Final Multi-Point Quality Sign-Off">
+  <defs>
+    <linearGradient id="galBg3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050912" />
+      <stop offset="100%" stop-color="#0c1424" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="640" fill="url(#galBg3)" />
+  <path d="M 60 520 Q 320 310 840 160" fill="none" stroke="#06b6d4" stroke-width="5" stroke-opacity="0.45" />
+  <circle cx="630" cy="280" r="130" fill="#06b6d4" fill-opacity="0.15" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.4" />
+  <rect x="60" y="410" width="780" height="170" rx="18" fill="#0c1424" fill-opacity="0.92" stroke="#06b6d4" stroke-opacity="0.35" stroke-width="2" />
+  <text x="100" y="465" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#f59e0b" letter-spacing="2.5">STAGE 03 · VERIFICATION</text>
+  <text x="100" y="515" font-family="system-ui, sans-serif" font-size="30" font-weight="800" fill="#f8fafc">Final Multi-Point Quality Sign-Off</text>
+  <text x="100" y="552" font-family="system-ui, sans-serif" font-size="17" fill="#94a3b8">Quality Verification Standard · Pristine Clean Mobile Detailing</text>
+</svg>

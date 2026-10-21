@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pristine-clean-mobile-detailing.example.com/sitemap.xml

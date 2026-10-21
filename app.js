@@ -13,11 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
   if (estForm && estOut) {
     estForm.addEventListener('change', function () {
       var svc = estForm.querySelector('[name="service"]');
+      var tier = estForm.querySelector('[name="tier"]');
       var urg = estForm.querySelector('[name="urgency"]');
       var svcText = svc && svc.options[svc.selectedIndex] ? svc.options[svc.selectedIndex].text : 'Service';
+      var tierText = tier && tier.options[tier.selectedIndex] ? tier.options[tier.selectedIndex].text : 'Signature Package';
       var urgVal = urg ? urg.value : 'standard';
-      var windowText = urgVal === 'emergency' ? 'Same-day emergency dispatch window' : urgVal === 'priority' ? 'Priority 24–48h window' : 'Standard 3–5 day scheduling window';
-      estOut.innerHTML = '<strong>Selected Scope:</strong> ' + svcText + ' · <em>' + windowText + '</em>. Written quote provided on-site.';
+      var windowText = urgVal === 'emergency' ? 'Same-day urgent dispatch window' : urgVal === 'priority' ? 'Priority 24–48h window' : 'Standard 3–5 day scheduling window';
+      estOut.innerHTML = '<strong>Selected Scope:</strong> ' + svcText + ' (' + tierText + ') · <em>' + windowText + '</em>. Written quote provided on-site.';
     });
   }
 
@@ -49,19 +51,30 @@ document.addEventListener('DOMContentLoaded', function () {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
       })
-        .then(function (r) { return r.json().then(function (d) { return { status: r.status, data: d }; }); })
+        .then(function (r) {
+          if (r.status === 404 || r.status === 405) {
+            return {
+              status: r.status,
+              data: {
+                ok: false,
+                error: 'Static preview host detected: connect an authorized GoHighLevel CRM webhook or production form endpoint before accepting live customer submissions.'
+              }
+            };
+          }
+          return r.json().then(function (d) { return { status: r.status, data: d }; });
+        })
         .then(function (res) {
           if (res.status === 200 && res.data.ok) {
-            statusEl.style.color = '#38bdf8';
+            statusEl.style.color = '#10b981';
             statusEl.textContent = 'Reference ' + res.data.referenceId + ': ' + res.data.message;
             contactForm.reset();
           } else {
-            statusEl.style.color = '#f87171';
+            statusEl.style.color = '#ef4444';
             statusEl.textContent = res.data.error || 'Validation failed.';
           }
         })
         .catch(function (err) {
-          statusEl.style.color = '#f87171';
+          statusEl.style.color = '#ef4444';
           statusEl.textContent = 'Could not reach local development endpoint: ' + err.message;
         });
     });

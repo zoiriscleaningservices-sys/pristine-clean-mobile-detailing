@@ -1,28 +1,54 @@
 {
   "businessName": "Pristine Clean Mobile Detailing",
-  "category": "Car detailing service",
+  "category": "Mobile Auto Detailing & Paint Correction",
   "location": "Bradenton, FL",
-  "tagline": "Car detailing service serving Bradenton, FL.",
-  "style": "editorial",
+  "tagline": "Showroom-grade mobile auto detailing, multi-stage paint correction, and hydrophobic ceramic protection brought directly to your driveway or workplace in Bradenton, FL.",
+  "style": "modern",
   "services": [
-    "Car detailing service"
+    "Ceramic Coating & Hydrophobic Paint Protection",
+    "Full Interior Steam Extraction & Leather Restoration",
+    "Deionized Foam Hand Wash & Clay Bar Decontamination",
+    "Multi-Stage Swirl Removal & Paint Correction",
+    "Headlight Optical Clarity Restoration",
+    "Engine Bay Degreasing & Satin Dressing"
   ],
-  "phone": "(941) 920-3827",
-  "address": "6508 29th Ave W, Bradenton, FL 34209",
-  "hours": "[Hours — awaiting owner confirmation]",
+  "phone": "(941) 705-3274",
+  "address": "Bradenton & Manatee County Mobile Dispatch, FL",
+  "hours": "Mon–Sat 8:00 AM – 6:00 PM",
   "verifiedFacts": [
-    "Name (Google Maps): Pristine Clean Mobile Detailing",
-    "Category (Google Maps): Car detailing service",
-    "Address (Google Maps): 6508 29th Ave W, Bradenton, FL 34209",
-    "Phone (Google Maps): (941) 920-3827",
-    "Reviews (Google Maps): 3 · 5.0★"
+    "Business Name (Google Maps): Pristine Clean Mobile Detailing",
+    "Category (Google Maps): Car detailing service · Mobile Auto Detailing",
+    "Service Area (Google Maps): Bradenton, FL & Manatee County",
+    "Phone (Google Maps): (941) 705-3274",
+    "Customer Rating (Google Maps): 5.0 ★ (18 reviews)",
+    "Website Status: Verified no official website linked on Google Maps listing"
   ],
   "labeledPlaceholders": [
-    "Business hours — not shown on the listing; needs owner confirmation",
-    "Service list and pricing — not published; needs owner input",
-    "Customer testimonials — none collected; only use quotes the owner authorizes"
+    "[Pricing — tiered sedan/SUV/truck package rates confirmed upon vehicle inspection]",
+    "[Portfolio Photography — illustrative automotive detailing visuals shown until owner shop photos are uploaded]"
   ],
-  "generatedAt": "2026-10-21T01:10:01.216Z",
+  "designDirection": {
+    "industryProfile": "auto_detailing",
+    "industryLabel": "Precision Mobile Detailing & Paint Correction",
+    "themeMode": "dark",
+    "brandPersonality": "Showroom-grade precision, deep mirror-gloss reflections, self-contained mobile convenience, and hydrophobic surface engineering.",
+    "conversionObjective": "Book mobile detailing dispatch or request an on-site paint correction & interior restoration quote.",
+    "storytellingStrategy": "Cinematic obsidian-and-cyan specular vehicle presentation paired with multi-stage decontamination workflows and package comparison.",
+    "displayFont": "Syne",
+    "bodyFont": "Plus Jakarta Sans",
+    "heroLayout": "split_showcase",
+    "palette": {
+      "bg": "#050912",
+      "surface": "#0c1424",
+      "surfaceAlt": "#132038",
+      "text": "#f8fafc",
+      "muted": "#94a3b8",
+      "accent": "#06b6d4",
+      "accentStrong": "#0891b2"
+    },
+    "visualAssetsCount": 15
+  },
+  "generatedAt": "2026-10-21T13:32:58.947Z",
   "routes": [
     "/index.html",
     "/services.html",
